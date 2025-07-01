@@ -46,3 +46,23 @@ graph TD
     N -- No --> O[Bill Dies]
     K -- Pocket Veto --> O
 ```
+
+
+```mermaid
+
+
+<pre lang="markdown"><code>```mermaid graph TD A[Legislative Branch<br/>(Congress)] -->|Impeaches, Overrides veto| B[Executive Branch<br/>(President)] B -->|Vetoes laws, Calls special sessions| A A -->|Confirms judges, Can impeach judges| C[Judicial Branch<br/>(Courts)] C -->|Declares laws unconstitutional| A B -->|Appoints judges, Grants pardons| C C -->|Declares executive actions unconstitutional| B ```</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
