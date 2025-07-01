@@ -26,7 +26,7 @@ Resources from CM515 class
 
 <https://hgdownload.soe.ucsc.edu/downloads>
 
-
+```mermaid
 graph TD
     A[Bill Introduced] --> B[Committee Review]
     B --> C[Floor Vote in House or Senate]
@@ -45,3 +45,4 @@ graph TD
     N -- Yes --> L
     N -- No --> O[Bill Dies]
     K -- Pocket Veto --> O
+```
