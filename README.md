@@ -48,13 +48,11 @@ graph TD
 ```
 ```mermaid
 graph TD
-  Legislative[Legislative Branch (Congress)] -->|Impeaches President, Overrides veto, Confirms appointments| Executive[Executive Branch (President)]
-  Executive -->|Vetoes laws, Calls special sessions, Executes laws| Legislative
-  Legislative -->|Creates lower courts, Confirms judges, Can impeach judges| Judicial[Judicial Branch (Courts)]
-  Judicial -->|Declares laws unconstitutional| Legislative
-  Executive -->|Appoints judges, Grants pardons| Judicial
-  Judicial -->|Declares executive actions unconstitutional| Executive
-
-
+  A["Legislative Branch\n(Congress)"] -->|Impeaches President\nOverrides veto\nConfirms appointments| B["Executive Branch\n(President)"]
+  B -->|Vetoes laws\nCalls special sessions\nExecutes laws| A
+  A -->|Creates lower courts\nConfirms judges\nCan impeach judges| C["Judicial Branch\n(Courts)"]
+  C -->|Declares laws unconstitutional| A
+  B -->|Appoints judges\nGrants pardons| C
+  C -->|Declares executive actions unconstitutional| B
 
 ```
