@@ -48,21 +48,4 @@ graph TD
 ```
 
 
-```mermaid
-
-
-<pre lang="markdown"><code>```mermaid graph TD A[Legislative Branch<br/>(Congress)] -->|Impeaches, Overrides veto| B[Executive Branch<br/>(President)] B -->|Vetoes laws, Calls special sessions| A A -->|Confirms judges, Can impeach judges| C[Judicial Branch<br/>(Courts)] C -->|Declares laws unconstitutional| A B -->|Appoints judges, Grants pardons| C C -->|Declares executive actions unconstitutional| B ```</code></pre>
-
-
-
-
-
-
-
-
-
-
-
-
-
-```
+<pre lang="markdown"><code>```mermaid graph TD A[Legislative Branch<br/>(Congress)] -->|Impeaches President<br/>Overrides veto<br/>Confirms appointments| B[Executive Branch<br/>(President)] B -->|Vetoes laws<br/>Calls special sessions<br/>Executes laws| A A -->|Creates lower courts<br/>Confirms judges<br/>Can impeach judges| C[Judicial Branch<br/>(Courts)] C -->|Declares laws unconstitutional| A B -->|Appoints judges<br/>Grants pardons| C C -->|Declares executive actions unconstitutional| B ```</code></pre>
