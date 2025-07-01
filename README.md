@@ -25,3 +25,23 @@ Resources from CM515 class
 ### Gemome Browser
 
 <https://hgdownload.soe.ucsc.edu/downloads>
+
+
+graph TD
+    A[Bill Introduced] --> B[Committee Review]
+    B --> C[Floor Vote in House or Senate]
+    C --> D[Sent to Other Chamber]
+    D --> E[Committee Review in 2nd Chamber]
+    E --> F[Floor Vote in 2nd Chamber]
+    F --> G{Are Versions Identical?}
+    G -- Yes --> H[Send to President]
+    G -- No --> I[Conference Committee]
+    I --> J[Both Chambers Approve Final Version]
+    J --> H
+    H --> K{President Action}
+    K -- Sign --> L[Becomes Law]
+    K -- Veto --> M[Return to Congress]
+    M --> N{Override?}
+    N -- Yes --> L
+    N -- No --> O[Bill Dies]
+    K -- Pocket Veto --> O
